@@ -20,7 +20,7 @@ spec:
             type: Directory
       containers:
         - name: jenkins
-          image: jenkins/jenkins:lts
+          image: mwdomino/jenkins
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
