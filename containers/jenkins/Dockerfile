@@ -1,9 +1,7 @@
 FROM jenkins/jenkins:lts
 MAINTAINER matt@dominey.io
-
-ENV PATH="${HOME}/.local/bin:${PATH}"
-
 USER root
+
 RUN apt update && \
     apt upgrade -y && \
     apt install -y \
